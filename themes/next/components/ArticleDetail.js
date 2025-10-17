@@ -90,9 +90,8 @@ export default function ArticleDetail(props) {
                     </div>
                   </>
                 )}
-              </div>
-
               <WordCount wordCount={post.wordCount} readTime={post.readTime} />
+              </div>
             </section>
           </header>
         )}
