@@ -80,11 +80,14 @@ const BlogPostCard = ({ post, index, showSummary }) => {
           </div>
 
           {(!showPreview || showSummary) && !post.results && (
+            
+         <SmartLink href={post?.href} passHref legacyBehavior>
             <p
               {...aosProps}
-              className='mt-4 mb-12 text-gray-700 dark:text-gray-300 text-sm font-light leading-7'>
+              className='mt-4 mb-12 text-gray-700 dark:text-gray-300 text-m font-light leading-7'>
               {post.summary}
             </p>
+            </SmartLink>
           )}
 
           {/* 搜索结果 */}
@@ -102,14 +105,14 @@ const BlogPostCard = ({ post, index, showSummary }) => {
             </div>
           )}
 
-          <div className='text-right border-t pt-8 border-dashed'>
+          {/* <div className='text-right border-t pt-8 border-dashed'>
             <SmartLink
               href={post?.href}
               className='hover:bg-opacity-100 hover:underline transform duration-300 p-3 text-white bg-gray-800 cursor-pointer'>
               {locale.COMMON.ARTICLE_DETAIL}
               <i className='ml-1 fas fa-angle-right' />
             </SmartLink>
-          </div>
+          </div> */}
         </div>
 
         {siteConfig('NEXT_POST_LIST_COVER', null, CONFIG) &&

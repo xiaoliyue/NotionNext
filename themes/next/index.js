@@ -115,7 +115,7 @@ const LayoutBase = props => {
           className={
             (JSON.parse(siteConfig('LAYOUT_SIDEBAR_REVERSE'))
               ? 'flex-row-reverse'
-              : '') + ' next relative flex justify-center flex-1 pb-12'
+              : '') + ' next relative flex justify-center flex-1 pb-3'
           }>
           {/* 左侧栏样式 */}
           <SideAreaLeft targetRef={targetRef} {...props} />
@@ -148,7 +148,7 @@ const LayoutBase = props => {
         {/* 右下角悬浮 */}
         <div
           ref={floatButtonGroup}
-          className='right-8 bottom-12 lg:right-2 fixed justify-end z-20 '>
+          className='right-8 bottom-6 lg:right-2 fixed justify-end z-10 '>
           <div
             className={
               (showRightFloat ? 'animate__animated ' : 'hidden') +
@@ -179,9 +179,6 @@ const LayoutIndex = props => {
   return (
     <>
       {/* 首页移动端顶部显示公告 */}
-      <Card className='my-2 lg:hidden'>
-        <Announcement post={notice} />
-      </Card>
 
       <BlogListBar {...props} />
 
