@@ -26,7 +26,7 @@ export default function ArticleCopyright({ author, url, post }) {
         </li>
         <li>
           <strong className='mr-2'>{locale.COMMON.COPYRIGHT}:</strong>
-          {post.copyright || locale.COMMON.COPYRIGHT_NOTICE}
+          {post?.copyright || locale.COMMON.COPYRIGHT_NOTICE}
         </li>
         {siteConfig('NEXT_ARTICLE_NOT_BY_AI', false, CONFIG) && (
           <li>

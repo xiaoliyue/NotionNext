@@ -110,7 +110,7 @@ export default function ArticleDetail(props) {
 
             {/* 版权声明 */}
             {post?.type === 'Post' && (
-              <ArticleCopyright author={siteConfig('AUTHOR')} url={url} />
+              <ArticleCopyright author={siteConfig('AUTHOR')} url={url} post={post} />
             )}
 
             {/* 推荐文章 */}
