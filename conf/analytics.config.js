@@ -33,8 +33,8 @@ module.exports = {
   // 微软 Clarity 站点分析
   CLARITY_ID: process.env.NEXT_PUBLIC_CLARITY_ID || null, // 只需要复制Clarity脚本中的ID部分，ID是一个十位的英文数字组合
 
-  UMAMI_HOST: process.env.NEXT_PUBLIC_UMAMI_HOST || 'https://cloud.umami.is/script.js', // umami的服务地址
-  UMAMI_ID: process.env.NEXT_PUBLIC_UMAMI_ID || '', // umami的id
+  UMAMI_HOST: process.env.NEXT_PUBLIC_UMAMI_HOST || 'https://umami.1988123.xyz/script.js', // umami的服务地址
+  UMAMI_ID: process.env.NEXT_PUBLIC_UMAMI_ID || 'd18da495-265d-4bab-ab2e-7c0941e3b26c', // umami的id
 
   // <---- 站点统计
 }
